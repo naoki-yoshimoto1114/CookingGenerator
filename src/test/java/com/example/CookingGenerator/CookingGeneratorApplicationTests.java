@@ -1,0 +1,13 @@
+package com.example.CookingGenerator;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class CookingGeneratorApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
