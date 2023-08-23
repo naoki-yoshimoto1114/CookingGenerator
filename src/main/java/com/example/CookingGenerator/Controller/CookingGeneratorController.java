@@ -12,9 +12,18 @@ public class CookingGeneratorController {
         return "index";
     }
 
-    @GetMapping("/greeting")
-    public String greeting(@RequestParam(name = "name", required = false, defaultValue = "World") String name, Model model) {
-        model.addAttribute("name", name);
-        return "greeting";
+    @GetMapping("choose/category")
+    public String category() {
+        return "category";
+    }
+
+    @GetMapping("choose/cook")
+    public String cook() {
+        return "cook";
+    }
+
+    @GetMapping("choose/result")
+    public String result() {
+        return "result";
     }
 }
