@@ -1,10 +1,21 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://wwww.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
 </head>
 <body>
-<p>Get your cooking <a href="/choose/category">here</a></p>
+  <div class="container">
+    <div class="image src1"></div>
+<!--      <img th:src="@{images/ine.jpeg}">-->
+    <div class="image src2"></div>
+    <div class="image src3"></div>
+    <div class="image src4"></div>
+    <div class="image src5"></div>
+    <div class="vertical-sample">
+      <h1 class="main-title">今日何食べる？</h1>
+    </div>
+    <a href="/choose/category" class="btn btn-malformation">料理選択画面へ</a>
+    <a href="" class="btn btn-malformation2">過去の履歴</a>
+  </div>
 </body>
 </html>
