@@ -12,6 +12,11 @@ public class CookingGeneratorController {
         return "index";
     }
 
+    @GetMapping("choose/ingredients")
+    public String ingredients() {
+        return "ingredients";
+    }
+
     @GetMapping("choose/category")
     public String category() {
         return "category";
@@ -27,3 +32,4 @@ public class CookingGeneratorController {
         return "result";
     }
 }
+

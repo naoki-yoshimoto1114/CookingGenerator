@@ -1,6 +1,6 @@
 .container{
-    height: 900px;
-    width: 1600px;
+    /*height: 900px;
+    width: 1600px;*/
     position: relative;
 }
 
@@ -14,27 +14,27 @@
     background-size: cover;
     background-position: center center;
     position:  absolute;  
-    z-index: 10; 
+    z-index: 10;
 
     animation: image-switch-animation 25s infinite;
 }
 
 
 .src1 {
-    background-image:url(images/ine.jpeg);
+    background-image:url(../images/ine.jpeg);
 }
 .src2 {
-    background-image: url(river.jpeg);
+    background-image: url(../images/river.jpeg);
     }
 .src3 {
-    background-image: url(fish.jpg);
+    background-image: url(../images/fish.jpg);
     }
 .src4 {
-    background-image: url(mountain.jpg);
+    background-image: url(../images/mountain.jpg);
 }
 
 .src5 {
-    background-image: url(sea.jpg);
+    background-image: url(../images/sea.jpg);
 }
 
 
@@ -107,9 +107,7 @@ html {
     font-size: 62.5%;
 }
 
-.btn,
-a.btn,
-button.btn {
+.btn {
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 1.5;
@@ -134,7 +132,7 @@ button.btn {
     left: 400px;
 }
 
-a.btn-malformation {
+.btn-malformation {
     font-size: 2rem;
 
     padding: 3rem 4rem;
@@ -142,16 +140,18 @@ a.btn-malformation {
     color: #fff;
     border-radius: 100% 80px / 80px 100%;
     background-color: #eb6100;
+    top:  -100px;
+    left: 300px;
 }
 
-a.btn-malformation:hover {
+.btn-malformation:hover {
     color: #fff;
     border-radius: 60% 80% / 100% 80%;
 }
     
     
     
-a.btn-malformation2 {
+.btn-malformation2 {
     font-size: 2rem;
 
     padding: 3rem 4rem;
@@ -159,11 +159,11 @@ a.btn-malformation2 {
     color: #fff;
     border-radius: 100% 80px / 80px 100%;
     background-color: #2B5F75;
-    top:  20px;
-    left: 800px;
+    top:  -100px;
+    right: 20px;
 }
 
-a.btn-malformation2:hover {
+.btn-malformation2:hover {
     color: #fff;
     border-radius: 60% 80% / 100% 80%;
     
