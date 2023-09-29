@@ -1,11 +1,30 @@
 <!DOCTYPE HTML>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Getting Started: Serving Web Content</title>
+    <link rel="stylesheet" th:href="@{/css/style3.css}"/>
 </head>
 <body>
+
+
     <p>料理ジャンルを選択してください。</p>
     <a href="/choose/cook">次へ</a>
+    <main>
+        <div class="LeftContent">
+            <p>~和食🥢~</p>
+        </div>
+
+        <div class="RightContent">
+            <p>~洋食~</p>
+        </div>
+
+        <div class="RightContent2">
+            <p>~中華🍜~</p>
+        </div>
+
+    </main>
+    <div class="image_circle"></div>
+
 </body>
 </html>

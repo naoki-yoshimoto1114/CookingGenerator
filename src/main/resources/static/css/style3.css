@@ -1,0 +1,19 @@
+body {
+    width: 100%; /* 要素の幅を100%に設定 */
+    height: 700px; /* 要素の高さを設定（適切な高さを設定してください） */
+    background-image: url("../images/temple3.jpeg"); /* 背景画像のURLを指定 */
+    background-size: cover; /* 背景画像を要素に合わせて表示 */
+    background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
+     position: absolute;
+     top: 20px; /* 上に20px移動 */
+     margin: 0;
+}
+
+div.image_circle {
+  width: 100px;
+  height:100px;
+  border-radius:50%;
+  z-index: 250;
+  background-image: url("../images/magatama.jpg");
+  background-position: 54% 36%;
+}

@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>ingredients</title>
+    <link rel="stylesheet" th:href="@{/css/style2.css}"/>
+
 </head>
 <body>
-    <p>メイン食材を選択してください。</p>
-    <a href="/choose/category">次へ</a>
+    <main>
+      <form th:action="@{/choose/category}" method="post" >
+            <div class="LeftContent">
+                <h2>~肉系🥩~</h2>
+                <p class="mb5"></p>
+                <p></p>
+              <button class="button" type="submit" name="name" value="1">button</button>
+            </div>
+
+            <div class="RightContent">
+                <h2>~魚介系🐡🦑~</h2>
+                <p class="mb5"></p>
+                <p></p>
+                <button class="button" type="submit" name="name" value="2">button</button>
+            </div>
+
+            <div class="RightContent2">
+                <h2>~麺系🍜~</h2>
+                <p class="mb5"></p>
+                <p></p>
+                <button class="button" type="submit" name="name" value="3">button</button>
+            </div>
+
+            <div class="RightContent3">
+                <h2>~ご飯系🍚~</h2>
+                <p class="mb5"></p>
+                <p></p>
+                <button class="button" type="submit" name="name" value="4">button</button>
+            </div>
+
+       </form>
+    </main>
+    <div class="Ba"></div>
+
+    <div class="balloon">
+        <p>こんにちは。</p>
+        <p>以下よりメイン食材を1つお選びください</p>
+    </div>
+
+    <div class="ball">
+        <p>・・・・・・・</p>
+      <br>  <p></p>
+    </div>
+
 </body>
 </html>
