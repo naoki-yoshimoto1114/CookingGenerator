@@ -1,19 +1,159 @@
+h2.heading::after {
+    content: "ジャンルの選択";
+    color: red; /* 任意の色を指定します */
+}
+
+
+.mb5 {
+    margin-bottom: 4em;
+    inline-size: 1.0rem;
+    block-size: 1.0rem;
+    /*margin-bottom: 15em;*/
+}
+
+
+a.btn_06 {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    width: 100px;
+    margin: auto;
+    padding: 1rem 4rem;
+    font-weight: bold;
+    border-radius: 150vh;
+    border-bottom: 7px solid #0686b2;
+    background: #27acd9;
+    color: #fff;
+}
+a.btn_06:hover {
+    margin-top: 6px;
+    border-bottom: 1px solid #0686b2;
+    color: #fff;
+}
+
+
+
+
+
 body {
     width: 100%; /* 要素の幅を100%に設定 */
-    height: 700px; /* 要素の高さを設定（適切な高さを設定してください） */
+    height: 500px; /* 要素の高さを設定（適切な高さを設定してください） */
     background-image: url("../images/temple3.jpeg"); /* 背景画像のURLを指定 */
     background-size: cover; /* 背景画像を要素に合わせて表示 */
     background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
      position: absolute;
-     top: 20px; /* 上に20px移動 */
+     top: -80px; /* 上に20px移動 */
      margin: 0;
+    /*font-family: "MS Pゴシック" ;*/
 }
 
-div.image_circle {
-  width: 100px;
-  height:100px;
-  border-radius:50%;
-  z-index: 250;
-  background-image: url("../images/magatama.jpg");
-  background-position: 54% 36%;
+/* container */
+.wrapper{
+    width:100%;
 }
+.wrapper .container{
+    max-width:1500px;
+    margin:0px auto;
+    padding:80px 0px;
+}
+/* content */
+.wrapper .content .heading{
+    margin:0px 0px 40px 0px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+@media (min-width: 992px) {
+    .wrapper .content .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.wrapper .content .list-item {
+    margin:50px 0px;
+    padding:0px 50px;
+    text-align:center;
+}
+@media (min-width: 992px) {
+    .wrapper .content .list-item {
+        margin:0px;
+        width:calc(100% / 3);
+    }
+}
+.wrapper .content .list-item .image{
+    display:block;
+    width:100%;
+    max-width:300px;
+    margin:0px auto 20px auto;
+    border-radius:100%;
+}
+.wrapper .content .list-item .text{
+    line-height:2.2rem;
+    font-size:1.0rem;
+    color:  #FF4500;
+}
+
+
+
+
+/* 和食のスタイル */
+.wrapper .content .list-item:nth-child(1) .image {
+    margin-top: -180px;
+    margin-left: -10px;
+    /*line-height: 1.5;*/
+
+    /* 画像の高さを調整 */
+    max-width: 120%;
+    height: auto;
+    /* 画像の幅を最大300pxに制限 */
+    max-width: 300px;
+    /* その他のスタイル */
+    /* 任意のスタイルを追加で指定 */
+}
+.wrapper .content .list-item:nth-child(1) .text {
+    /* テキストの色を調整 */
+    background-color: blue;
+    color: #EDDCB4; /* オレンジ色 */
+    opacity: 0.7;
+}
+
+/* 中華料理のスタイル */
+.wrapper .content .list-item:nth-child(2) .image {
+    /* 画像の高さを調整 */
+    max-width: 100%;
+    height: auto;
+    /* 画像の幅を最大300pxに制限 */
+    max-width: 300px;
+    /* その他のスタイル */
+    /* 任意のスタイルを追加で指定 */
+}
+.wrapper .content .list-item:nth-child(2) .text {
+    background-color: #EB7A77;
+    color: #ffd12a; /* オレンジ色 */
+    opacity: 0.9;
+}
+
+/* 洋食のスタイル */
+.wrapper .content .list-item:nth-child(3) .image {
+    /* 画像の高さを調整 */
+    max-width: 100%;
+    height: auto;
+    /* 画像の幅を最大300pxに制限 */
+    max-width: 300px;
+    /* その他のスタイル */
+    /* 任意のスタイルを追加で指定 */
+}
+.wrapper .content .list-item:nth-child(3) .text {
+    background-color: #5DB98B;
+    color: #EDDCB4; /* オレンジ色 */
+    opacity: 0.9;
+    /*border-radius: 120px;*/
+    /*border-radius:180%;*/
+    /* その他のスタイル */
+    /* 任意のスタイルを追加で指定 */
+}
+
+
+

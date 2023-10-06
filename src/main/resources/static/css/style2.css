@@ -1,5 +1,5 @@
 .button{
- width: 50%;
+ width: 70%;
     font-size:32px;
     box-sizing: border-box;
     border: 1px solid #68779a;
@@ -12,21 +12,21 @@
     margin-bottom: 15em;
     inline-size: 1.8rem;
     block-size: 1.8rem;
-    margin-bottom: 15em;
+    /*margin-bottom: 15em;*/
 }
 
 
 
 
 body {
-    width: 100%; /* 要素の幅を100%に設定 */
-    height: 700px; /* 要素の高さを設定（適切な高さを設定してください） */
+    width: 100%;        /*要素の幅を100%に設定 */
+    height: 710px; /* 要素の高さを設定（適切な高さを設定してください） */
     background-image: url("../images/temple2.jpeg"); /* 背景画像のURLを指定 */
     background-size: cover; /* 背景画像を要素に合わせて表示 */
     background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
     position: absolute;
     top: 20px; /* 上に20px移動 */
-    right: 120px;
+    left: -100px;
 }
 
 
@@ -41,13 +41,13 @@ form{
 }
 
 .LeftContent{
-    flex: 0.22;
+    flex: 0.31;
     background-color: #FF9999;
     text-align: center;
-    margin-left: 40px;
+    margin-left:320px;
 
          background-image:url("../images/meat.jpeg");
-         margin: 20;
+         /*margin: 10;*/
          margin-top: 230px; /* 上側に20ピクセルの余白を追加して下に移動 */
          width: 60vw;
          height: 60vh;
@@ -55,37 +55,61 @@ form{
          background-position:120% 30%;
          background-size:contain;
          z-index: 60;
+         border-radius: 10px; /* 角を丸くする */
 
 
 }
 
 .RightContent{
-    flex: 0.22;
+    flex: 0.32;
     background-color: #99FFFF;
     text-align: center;
-    margin-left: 110px;
+    margin-left: 100px;
          background-image:url("../images/fish2.jpeg");
-         margin: 30;
+         /*margin: 30;*/
          margin-top: 230px;
-         width: 60vw;
+         width: 100vw;
          height: 60vh;
          background-repeat: no-repeat;
          background-position:120% 30%;
          background-size:contain;
          z-index: 50;
+         border-radius: 10px; /* 角を丸くする */
+
+}
+
+
+.RightContent2{
+    flex: 0.3;
+    background-color: #FF6928;
+    text-align: center;
+    margin-left: 80px;
+    background-image:url("../images/egg.jpeg");
+    /*margin: 30;*/
+    margin-top: 230px;
+    width: 60vw;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position:120% 30%;
+    background-size:contain;
+    z-index: 50;
+    border-radius: 10px; /* 角を丸くする */
 
 }
 
 
 
-.RightContent2{
-    flex: 0.22;
+
+
+
+.RightContent3{
+    flex: 0.3;
     background-color: #FFFF99;
     text-align: center;
     margin-left: 80px;
 
     background-image:url("../images/men.jpeg");
-     margin: 30;
+     /*margin: 30;*/
      margin-top: 230px;
      width: 160vw;
      height: 60vh;
@@ -93,24 +117,26 @@ form{
      background-position:220% 30%;
      background-size:contain;
      z-index: 40;
+    border-radius: 10px; /* 角を丸くする */
 }
 
 
 
-.RightContent3{
-    flex: 0.22;
+.RightContent4{
+    flex: 0.3;
     background-color: #90ee90;
     text-align: center;
     margin-left: 80px;
 
     background-image:url("../images/rice.jpeg");
-    margin-top: 230px; /* 上側に20ピクセルの余白を追加して下に移動 */
+    margin-top: 240px; /* 上側に20ピクセルの余白を追加して下に移動 */
     width: 60vw;
     height: 60vh;
     background-repeat: no-repeat;
     background-position:200% 30%;
     background-size:contain;
      z-index: 30;
+    border-radius: 10px; /* 角を丸くする */
 }
 
 
@@ -118,12 +144,12 @@ form{
 .balloon {
   width: 300px; /* 幅を増やす */
   position: relative;
-  margin: 2em 0 2em 40px;
+  margin: -630px 0 2em 40px;
   padding: 30px;
   background: #fff0c6;
   border-radius: 30px;
   z-index: 130;
-  margin-top: -650px;
+    right: -150px;
 }
 
 .balloon:before {
@@ -163,13 +189,12 @@ form{
 .ball {
   width: 300px; /* 幅を増やす */
   position: relative;
-  margin: 2em 0 2em 40px;
+  margin: -140px 0 2em 40px;
   padding: 30px;
   background: #fff0c6;
   border-radius: 30px;
   z-index: 130;
-  margin-top: -140px;
-  right: -750px;
+  right: -950px;
 }
 
 .ball:before {

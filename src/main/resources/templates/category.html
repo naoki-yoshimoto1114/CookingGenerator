@@ -7,24 +7,64 @@
 </head>
 <body>
 
+<form th:action="@{/choose/cook}" method="post" >
+<!-- <input type="button" onclick="th.href='cook.html'" value="ここをクリックするとsample.htmlページに移動します">&ndash;&gt;-->
+    <section class="wrapper">
+    <div class="container">
+        <div class="content">
+            <h2 class="heading">ジャンルの選択</h2>
+            <div class="list">
 
-    <p>料理ジャンルを選択してください。</p>
-    <a href="/choose/cook">次へ</a>
-    <main>
-        <div class="LeftContent">
-            <p>~和食🥢~</p>
+                <div class="list-item">
+                    <p class="mb5"></p>
+                    <img src="/images/wasyoku.jpeg" class="image wasyoku"> <!-- クラスを追加 -->
+<!--                    <h1>和食</h1>-->
+                    <div class="text">新鮮な季節の食材を使い、その自然の恵みを<br>最大限に引き出す
+                       食材の活用が特徴で<br>シンプルでありながら深い旨味と味わいを与える<br>
+                        また見た目も美しくムダを限りなく削ぎ落したその佇まいは
+                        まさに日本の文化が生んだ食の芸術いえる一品</div>
+<!--                    <p class="mb5"></p>-->
+                    <p></p>
+<!--                    <a href="/choose/cook" class="btn_06">和食を選択</a>-->
+<!--                    <button class="btn_06" type="submit" name="name" value="1">和食を選択</button>-->
+                    <a href="/choose/cook" class="btn_06">和食を選択</a>
+                </div>
+
+
+                <div class="list-item">
+                    <img src="/images/tyuuka.jpeg" class="image tyuuka"> <!-- クラスを追加 -->
+<!--                    <h1>中華</h1>-->
+                    <div class="text">
+                        数多の香辛料と独特の調理法を組み合わせ、<br>
+                        独自の料理文化を築き上げた食の魔術師<br>
+                        バラエティの豊富さと味のパンチ力は<br>食べた者を忽ち虜にし他の追随を許さない<br>
+                        広東料理のシンプルな美味しさ、四川料理のスパイシーな魅力、北京料理の皇帝の味わい、
+                        水産物を活かした上海料理の洗練された味覚、それぞれの地域が持つ特徴的な料理が、中華料理の魅力を一層引き立てる
+                    </div>
+                    <p></p>
+                    <a href="/choose/cook" class="btn_06">中華を選択</a>
+                </div>
+
+
+                <div class="list-item">
+                    <img src="/images/yousyoku2.jpeg" class="image yousyoku2"> <!-- クラスを追加 -->
+<!--                    <h1>洋食</h1>-->
+                    <div class="text">食材の良さを最大に引き出しながら
+                        幾多の世界を駆け長い時間をかけて吸収と発展を繰り返し成長した<br>
+                        高い技術力と、手数の多さから
+                        主食から肉食、魚食、デザートまであらゆるジャンルでメインを張れる品目が揃っており
+                        ファストフード店から家庭料理、レストランやパーティー会場などあらゆる場面で重宝される
+                        味、料理の手軽さ、汎用性、見た目において他ジャンルと比べても一線を画す品目といえる
+                    </div>
+                    <p></p>
+                    <a href="/choose/cook" class="btn_06">洋食を選択</a>
+                </div>
+            </div>
+
         </div>
-
-        <div class="RightContent">
-            <p>~洋食~</p>
-        </div>
-
-        <div class="RightContent2">
-            <p>~中華🍜~</p>
-        </div>
-
-    </main>
-    <div class="image_circle"></div>
+    </div>
+</section>
+</form>
 
 </body>
 </html>

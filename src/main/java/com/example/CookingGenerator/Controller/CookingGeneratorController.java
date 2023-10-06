@@ -1,10 +1,8 @@
 package com.example.CookingGenerator.Controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class CookingGeneratorController {
@@ -18,17 +16,12 @@ public class CookingGeneratorController {
         return "ingredients";
     }
 
-    @GetMapping("choose/category")
+    @RequestMapping("choose/category")
     public String category() {
         return "category";
     }
 
-    @PostMapping("choose/category")
-    public String postCategory() {
-        return "category";
-    }
-
-    @GetMapping("choose/cook")
+    @RequestMapping("choose/cook")
     public String cook() {
         return "cook";
     }

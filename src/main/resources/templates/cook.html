@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>cook</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Getting Started: Serving Web Content</title>
+    <link rel="stylesheet" th:href="@{/css/style4.css}"/>
 </head>
 <body>
-    <p>調理方法を選択してください。</p>
-    </div>
-    <a href="/choose/result">結果表示</a>
+<!--    <p>調理方法を選択してください。</p>-->
+    <span class="custom-background">調理法の選択</span>
+
+<!--    <a href="/choose/result">結果表示</a>-->
+
+    <form th:action="@{/choose/result}" method="post" >
+
+
+        <section class="wrapper">
+            <div class="container">
+                <div class="content">
+                    <h2 class="heading">調理法の選択</h2>
+                    <p class="mb5"></p>
+                    <div class="list">
+
+                        <div class="list-item">
+                            <p class="mb5"></p>
+                            <p class="mb5"></p>
+                            <img src="/images/agemono.jpg" class="image agemono"> <!-- クラスを追加 -->
+                            <!--                    <h1>和食</h1>-->
+                            <div class="text"></div>
+<!--                            <a href="cook.html" class="btn_06">揚げ物を選択</a>-->
+                            <a href="/choose/result" class="btn_06">揚げる</a>
+                        </div>
+
+
+                        <div class="list-item">
+                            <img src="/images/itamemono.jpeg" class="image itamemono"> <!-- クラスを追加 -->
+                            <!--                    <h1>中華</h1>-->
+                            <div class="text">
+                            </div>
+                            <a href="/choose/result" class="btn_06">炒める</a>
+                        </div>
+
+
+                        <div class="list-item">
+                            <img src="/images/yakimono.jpeg" class="image yakimono"> <!-- クラスを追加 -->
+                            <!--                    <h1>洋食</h1>-->
+                            <div>
+                            </div>
+                            <p></p>
+                            <a href="/choose/result" class="btn_06">焼く</a>
+                        </div>
+
+                        <div class="list-item">
+                            <img src="/images/nikomimono.jpeg" class="image nikomimono"> <!-- クラスを追加 -->
+                            <!--                    <h1>洋食</h1>-->
+                            <div>
+                            </div>
+                            <p></p>
+                            <a href="/choose/result" class="btn_06">煮込む</a>
+                        </div>
+
+                        <div class="list-item">
+                            <img src="/images/musiryouri.jpeg" class="image musiryouri"> <!-- クラスを追加 -->
+                            <!--                    <h1>洋食</h1>-->
+                            <div>
+                            </div>
+                            <p></p>
+                            <a href="/choose/result" class="btn_06">蒸す</a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </form>
+
 </body>
-</html>
